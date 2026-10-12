@@ -1,0 +1,12 @@
+topprism:
+  purpose:
+    - data-governance
+  capability: module1-integration
+  platform_layer: trusted-world-state
+  # maturity 枚举(组织级四档): specification-frozen | experiment-validated | applied-component | certified-component
+  maturity: experiment-validated
+  evidence:
+    type: automated-test-suite
+    scope: >
+      CI 5x(3.9-3.13); 5 E2E tests locking gate invariant (blocked data never reaches planning) over six tag-pinned service repos.
+  customer_data_in_repo: false
