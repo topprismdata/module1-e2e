@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+module1_e2e/__init__.py
+module1_e2e/pipeline.py
+module1_e2e.egg-info/PKG-INFO
+module1_e2e.egg-info/SOURCES.txt
+module1_e2e.egg-info/dependency_links.txt
+module1_e2e.egg-info/requires.txt
+module1_e2e.egg-info/top_level.txt
+tests/test_e2e.py

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "module1-e2e"
+version = "0.1.0"
+description = "Module-1 integration & E2E + Layer API: chains geocode-arbiter, identity-service, assignment-service, service-rules, dq-workbench; gate invariant — data not passing DQ gates can never reach planning."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "TopPrism WP09" }]
+dependencies = [
+    "coords-core @ git+https://github.com/topprismdata/coords-core.git@v0.1.0",
+    "geocode-arbiter @ git+https://github.com/topprismdata/geocode-arbiter.git@v0.1.0",
+    "identity-service @ git+https://github.com/topprismdata/identity-service.git@v0.1.0",
+    "assignment-service @ git+https://github.com/topprismdata/assignment-service.git@v0.1.0",
+    "service-rules @ git+https://github.com/topprismdata/service-rules.git@v0.1.0",
+    "dq-workbench @ git+https://github.com/topprismdata/dq-workbench.git@v0.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["module1_e2e*"]

@@ -1,0 +1,9 @@
+coords-core @ git+https://github.com/topprismdata/coords-core.git@v0.1.0
+geocode-arbiter @ git+https://github.com/topprismdata/geocode-arbiter.git@v0.1.0
+identity-service @ git+https://github.com/topprismdata/identity-service.git@v0.1.0
+assignment-service @ git+https://github.com/topprismdata/assignment-service.git@v0.1.0
+service-rules @ git+https://github.com/topprismdata/service-rules.git@v0.1.0
+dq-workbench @ git+https://github.com/topprismdata/dq-workbench.git@v0.1.0
+
+[dev]
+pytest>=7
